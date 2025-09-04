@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("3d-rendering-main-currency-exchange-world-black-background-copy-space-forex-trading-investment-concept_50039-2646.avif");
+    background-size: cover;
+    color:rgb(224, 231, 230)
+}
+.container{
+    background-color: chocolate;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+}
+form{
+    margin: 2rem 0 1rem 0;
+}
+
+from,select,input,button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.69rem;
+}
+
+form input{
+    border: 1px solid black;
+    font-size: 1rem;
+    height: 2rem;
+    padding-left: 1rem;
+}
+.drop-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.drop-down i{
+    font-size: 1.83rem;
+    margin-top: 1rem;
+}
+.select-cont img{
+    max-width: 3rem;
+}
+.select-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid wheat;
+    background-color: aqua;
+    border-radius: 20%;
+}
+.select-cont select{
+    width: auto ;
+}
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+button {
+    padding: 0.75rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg,red ,green,blue,chocolate);
+    z-index: -1;
+    background-size: 400%;
+    filter: blur(8px);
+    animation: animate 5s linear infinite;
+    border-radius: 12px;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
